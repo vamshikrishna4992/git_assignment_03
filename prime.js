@@ -1,19 +1,21 @@
-function checkPrime(num){
-  let factor=0
-   for(let i=0;i<=num;i++){
-     if(num%i==0){
-       factor++
-     }
-   }
-  if(factor==2){
-    return true;
-  }else{
-    return false;
-  }
+
+function checkPrime(n){
+let count = 0;
+for(let i=1;i<=n;i++){
+if(n%i==0){
+count++;
 }
-let answer=checkPrime(12);
-if(answer == true){
-  console.log("Num is Prime")
+}
+if(count==2){
+return true;
 }else{
-  console.log("Num is not prime")
+return false;
 }
+}
+
+let answer=checkPrime(17)
+if(answer==true){
+console.log("Number is Prime")
+}
+else{
+console.log("Number is not a Prime")
